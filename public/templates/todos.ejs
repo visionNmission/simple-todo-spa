@@ -1,0 +1,11 @@
+<ul id="todos">
+  <% todos.forEach(todo => { %>
+    <li class="todo-item" data-id="<%= todo.id %>">
+      <% if (todo.complete) { %>
+        <strike><%= todo.title %></strike>
+      <% } else { %>
+        <%= todo.title %>
+      <% } %>
+    </li>
+  <% }) %>
+</ul>
