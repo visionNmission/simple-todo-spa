@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "sample todo",
+      "complete": true
+    },
+    {
+      "id": 2,
+      "title": "completed todo",
+      "complete": true
+    }
+  ]
+}

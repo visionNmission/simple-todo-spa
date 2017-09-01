@@ -1,11 +1,13 @@
-<ul id="todos">
+<div id="todos">
   <% todos.forEach(todo => { %>
-    <li class="todo-item" data-id="<%= todo.id %>">
+    <div class="todo-item" data-id="<%= todo.id %>">
+      <input class="todo-checkbox" type="checkbox" <%= todo.complete ? "checked" : ""%>>
       <% if (todo.complete) { %>
         <strike><%= todo.title %></strike>
       <% } else { %>
         <%= todo.title %>
       <% } %>
-    </li>
+      <i class="todo-remove fa fa-remove"></i>
+    </div>
   <% }) %>
-</ul>
+</div>

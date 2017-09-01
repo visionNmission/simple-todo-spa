@@ -1,0 +1,7 @@
+{
+    "emmet.showExpandedAbbreviation": "always",
+    "emmet.includeLanguages": {
+        "javascript": "html"
+    },
+    "emmet.triggerExpansionOnTab": true
+}
