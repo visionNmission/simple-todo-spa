@@ -1,4 +1,8 @@
-(function(window, document) {
+(function (window, document) {
+
+  /**
+   * 서버에서 할일 템플릿과 할일 데이터를 가져온 후, #todos 요소 안에 렌더링하는 함수
+   */
   function loadTodos() {
     console.log('start loadTodos')
     render({
@@ -38,11 +42,12 @@
     axios.post('/api/todos', {
       title: form.elements.title.value
     })
-    .then(loadTodos)
-    .then(() => {
-      form.elements.title.value = null
+      .then(loadTodos)
+      .then(() => {
+        form.elements.title.value = null
       })
   })
 
   loadTodos()
+
 })(window, document)
